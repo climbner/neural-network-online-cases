@@ -1,29 +1,39 @@
-# neural-network-online-cases
-安徽大学神经网络线上实践案例库
-# 神经网络课程线上实践案例库
+# PyTorch Examples
 
-本仓库是《神经网络》课程的线上实践案例资源库，主要用于支撑课程线上实践教学，帮助学生在真实项目中理解神经网络的基本原理、模型结构、训练方法和应用流程。
+https://pytorch.org/examples/
 
-本资源库注重实践能力培养，围绕神经网络基础、深度学习模型构建、图像分类、医学图像分析和模型可解释性等内容，整理和改造了一批典型开源项目案例。学生可以通过代码运行、参数调整、结果分析和实验报告撰写等方式，提升动手能力和问题解决能力。
+`pytorch/examples` is a repository showcasing examples of using [PyTorch](https://github.com/pytorch/pytorch). The goal is to have curated, short, few/no dependencies _high quality_ examples that are substantially different from each other that can be emulated in your existing work.
 
-同时，本资源库也突出神经网络与其他学科领域的交叉融合，引导学生了解神经网络在计算机视觉、医学图像处理、模型解释和智能分析等方向的应用，进一步认识人工智能前沿技术的发展趋势和实际价值。
+- For tutorials: https://github.com/pytorch/tutorials
+- For changes to pytorch.org: https://github.com/pytorch/pytorch.github.io
+- For a general model hub: https://pytorch.org/hub/ or https://huggingface.co/models
+- For recipes on how to run PyTorch in production: https://github.com/facebookresearch/recipes
+- For general Q&A and support: https://discuss.pytorch.org/
 
-## 资源内容
+## Available models
 
-本仓库主要包括以下几类实践项目：
+- [Image classification (MNIST) using Convnets](./mnist/README.md)
+- [Word-level Language Modeling using RNN and Transformer](./word_language_model/README.md)
+- [Training Imagenet Classifiers with Popular Networks](./imagenet/README.md)
+- [Generative Adversarial Networks (DCGAN)](./dcgan/README.md)
+- [Variational Auto-Encoders](./vae/README.md)
+- [Superresolution using an efficient sub-pixel convolutional neural network](./super_resolution/README.md)
+- [Hogwild training of shared ConvNets across multiple processes on MNIST](mnist_hogwild)
+- [Training a CartPole to balance with actor-critic](./reinforcement_learning/README.md)
+- [Natural Language Inference (SNLI) with GloVe vectors, LSTMs, and torchtext](snli)
+- [Time sequence prediction - use an LSTM to learn Sine waves](./time_sequence_prediction/README.md)
+- [Implement the Neural Style Transfer algorithm on images](./fast_neural_style/README.md)
+- [Reinforcement Learning with Actor Critic and REINFORCE algorithms on OpenAI gym](./reinforcement_learning/README.md)
+- [PyTorch Module Transformations using fx](./fx/README.md)
+- Distributed PyTorch examples with [Distributed Data Parallel](./distributed/ddp/README.md) and [RPC](./distributed/rpc)
+- [Several examples illustrating the C++ Frontend](cpp)
+- [Image Classification Using Forward-Forward](./mnist_forward_forward/README.md)
+- [Language Translation using Transformers](./language_translation/README.md)
 
-| 模块 | 主要内容 |
-|---|---|
-| PyTorch 基础实践 | 包括张量操作、模型搭建、训练流程、损失函数和优化器等基础内容 |
-| 神经网络模型实践 | 包括前馈神经网络、卷积神经网络、循环神经网络等典型模型案例 |
-| 深度学习综合实践 | 包括图像分类、迁移学习、模型调参和实验结果分析等综合任务 |
-| 医学图像分析实践 | 包括医学图像分类、分割和特征提取等应用案例 |
-| 模型可解释性实践 | 包括特征归因、可视化分析和模型解释方法等内容 |
+Additionally, a list of good examples hosted in their own repositories:
 
-## 使用方式
+- [Neural Machine Translation using sequence-to-sequence RNN with attention (OpenNMT)](https://github.com/OpenNMT/OpenNMT-py)
 
-学生可根据课程进度进入对应模块，完成项目阅读、环境配置、代码运行、参数修改、结果记录和实验分析等任务。教师可结合教学内容进一步设计线上实验、课堂讨论和项目式学习任务。
+## Contributing
 
-## 建设目标
-
-通过本资源库建设，形成面向《神经网络》课程的线上实践支撑平台，帮助学生将理论知识与项目实践相结合，增强学生对神经网络模型、跨学科应用和人工智能前沿技术的综合理解。
+If you'd like to contribute your own example or fix a bug please make sure to take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
